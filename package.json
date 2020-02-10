@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.4.4",
+    "gh-pages": "^2.2.0",
     "lottie-vuejs": "^0.3.7",
     "vue": "^2.6.10",
     "vue-analytics": "^5.22.1",

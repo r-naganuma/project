@@ -467,8 +467,8 @@ header {
     position: relative; }
     #top .aboutArea.active::after {
       content: "";
-      -webkit-animation: aboutArea 2.5s cubic-bezier(0.99, -0.01, 1, 0.4) 0s forwards;
-      animation: aboutArea 2.5s cubic-bezier(0.99, -0.01, 1, 0.4) 0s forwards;
+      -webkit-animation: aboutArea 1s cubic-bezier(0.99, -0.01, 1, 0.4) 0s forwards;
+      animation: aboutArea 1s cubic-bezier(0.99, -0.01, 1, 0.4) 0s forwards;
       background: #2E3C7B;
       position: absolute;
       top: 0; }
@@ -483,8 +483,8 @@ header {
         -webkit-animation: text-in 0.8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards;
         animation: text-in 0.8s cubic-bezier(0.22, 0.15, 0.25, 1.43) 0s backwards; }
     #top .aboutArea.active h2 {
-      -webkit-animation: aboutH2 .1s ease-in 1.4s forwards;
-      animation: aboutH2 .1s ease-in 1.4s forwards;
+      -webkit-animation: aboutH2 .1s ease-in .8s forwards;
+      animation: aboutH2 .1s ease-in .8s forwards;
       color: #fff; }
 
 #top .worksArea {
@@ -1034,41 +1034,37 @@ footer {
   0% {
     width: 100%;
     height: 0; }
-  10% {
-    width: 100%;
-    height: 100vh; }
   30% {
     width: 100%;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  60% {
-    width: 0px;
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px); }
+    height: 100vh; }
+  70% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
   100% {
-    width: 0px;
-    -webkit-transform: translateX(-9999px);
-    transform: translateX(-9999px); } }
+    width: 100%;
+    height: 0;
+    -webkit-transform: translateY(9999px);
+    transform: translateY(9999px); } }
 
 @keyframes aboutArea {
   0% {
     width: 100%;
     height: 0; }
-  10% {
-    width: 100%;
-    height: 100vh; }
   30% {
     width: 100%;
-    -webkit-transform: translateX(0);
-    transform: translateX(0); }
-  60% {
-    width: 0px;
-    -webkit-transform: translateX(-50px);
-    transform: translateX(-50px); }
+    height: 100vh; }
+  70% {
+    width: 100%;
+    height: 100vh;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
   100% {
-    width: 0px;
-    -webkit-transform: translateX(-9999px);
-    transform: translateX(-9999px); } }
+    width: 100%;
+    height: 0;
+    -webkit-transform: translateY(9999px);
+    transform: translateY(9999px); } }
 
 @-webkit-keyframes worksPic {
   0% {

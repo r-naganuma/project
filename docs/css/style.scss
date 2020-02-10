@@ -505,7 +505,7 @@ header{
 
             &::after{
                 content: "";
-                animation: aboutArea 2.5s cubic-bezier(.99,-0.01,1,.4) 0s forwards;
+                animation: aboutArea 1s cubic-bezier(.99,-0.01,1,.4) 0s forwards;
                 background: #2E3C7B;
                 position: absolute;
                 top: 0;
@@ -524,7 +524,7 @@ header{
             }
 
             h2{
-                animation: aboutH2 .1s ease-in 1.4s forwards;
+                animation: aboutH2 .1s ease-in .8s forwards;
                 color: #fff;
             }
         }
@@ -1140,21 +1140,19 @@ footer{
         width: 100%;
         height: 0;
     }
-    10%{
+    30%{
         width: 100%;
         height: 100vh;
     }
-    30%{
+    70%{
         width: 100%;
-        transform: translateX(0);
-    }
-    60%{
-        width: 0px;
-        transform: translateX(-50px);
+        height: 100vh;
+        transform: translateY(0);
     }
     100%{
-        width: 0px;
-        transform: translateX(-9999px);
+        width: 100%;
+        height: 0;
+        transform: translateY(9999px);
     }
 }
 

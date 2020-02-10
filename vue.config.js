@@ -1,5 +1,5 @@
+// vue.config.js
 module.exports = {
-  outputDir: 'docs',
-  assetsDir: './',
-  publicPath: './'
+    publicPath: '/project/',
+    outputDir: 'docs'
 }

@@ -1,6 +1,6 @@
 <template>
   <article id="works">
-    <section class="ttlArea" v-observe-visibility="{callback: visibilityChangedTtl, once: true,}" v-bind:class='{active:isVisibleTtl}'>
+    <section class="ttlArea" v-scroll="ttlScroll" v-observe-visibility="{callback: visibilityChangedTtl, once: true,}" v-bind:class='{active:isVisibleTtl}'>
       <h1 v-observe-visibility="{callback: visibilityChangedTtl, once: true,}" v-bind:class='{active:isVisibleTtl}'>WORKS</h1>
     </section>
     <div class="bgWhite">
@@ -31,6 +31,21 @@ export default {
   methods: {
     visibilityChangedTtl(isVisibleTtl) {
       this.isVisibleTtl = isVisibleTtl
+    },
+    ttlScroll: function (evt, el) {
+      if (window.innerWidth < 768) {
+        if (window.scrollY > 366) {
+          el.setAttribute(
+            'style',
+            'opacity: 0;'
+          )
+        } else{
+          el.setAttribute(
+            'style',
+            'opacity: 1;'
+          )
+        }
+      }
     }
   },
   components: {

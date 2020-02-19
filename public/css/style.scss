@@ -888,6 +888,11 @@ header{
                 };
             }
 
+            .playPic{
+                opacity: 0;
+                transform: rotateY( 240deg ) translate3d(0,80px,0);
+            }
+
             p{
                 margin-top: 10px;
                 font-family: museo-sans, 'KoburinaGothicStd-W3', sans-serif;
@@ -964,8 +969,6 @@ header{
             
             &.active{
                 .playPic{
-                    opacity: 0;
-                    transform: rotateY( 240deg ) translate3d(0,80px,0);
                     animation: worksPic .5s cubic-bezier(.14,.56,.44,.7) 0s forwards;
                 }
 
@@ -1107,7 +1110,6 @@ header{
     &.active{
         transition: all .7s cubic-bezier(.14,.56,.44,.7) 0s;
         height: 329px;
-        animation: zindex 0s ease-in .7s forwards;
 
         @include bp768 {
             height: 366.5px;

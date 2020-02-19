@@ -791,6 +791,10 @@ header {
       @media (max-width: 768px) {
         .worksArea_box--list:last-child {
           margin-bottom: 60px; } }
+      .worksArea_box--list .playPic {
+        opacity: 0;
+        -webkit-transform: rotateY(240deg) translate3d(0, 80px, 0);
+        transform: rotateY(240deg) translate3d(0, 80px, 0); }
       .worksArea_box--list p {
         margin-top: 10px;
         font-family: museo-sans, 'KoburinaGothicStd-W3', sans-serif;
@@ -853,9 +857,6 @@ header {
             background: rgba(0, 0, 0, 0.4);
             z-index: 2; }
       .worksArea_box--list.active .playPic {
-        opacity: 0;
-        -webkit-transform: rotateY(240deg) translate3d(0, 80px, 0);
-        transform: rotateY(240deg) translate3d(0, 80px, 0);
         -webkit-animation: worksPic 0.5s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s forwards;
         animation: worksPic 0.5s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s forwards; }
       .worksArea_box--list.active p {
@@ -966,9 +967,7 @@ header {
     -webkit-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     -o-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
-    height: 329px;
-    -webkit-animation: zindex 0s ease-in .7s forwards;
-    animation: zindex 0s ease-in .7s forwards; }
+    height: 329px; }
     @media (max-width: 768px) {
       .ttlArea.active {
         height: 366.5px; } }

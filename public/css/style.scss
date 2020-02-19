@@ -834,15 +834,11 @@ header{
         width: 100%;
         margin: 0 auto 100px;
         background: #fff;
-        position: relative;
-        z-index: 2;
     };
 
     &_box{
         display: flex;
         flex-wrap: wrap;
-        position: relative;
-        z-index: 2;
 
         @include bp768 {
             display: block;
@@ -871,12 +867,12 @@ header{
         &--list{
             width: 300px;
             margin: 0 100px 100px 0;
-            position: relative;
-            z-index: 2;
 
             @include bp768 {
                 width: 100%;
-                margin: 0 0 60px;
+                margin: 0;
+                box-sizing: border-box;
+                padding: 0 0 60px;
             };
 
             &:nth-child(3n){
@@ -885,23 +881,17 @@ header{
 
             &:nth-last-child(-n + 3){
                 margin-bottom: 0;
-
-                @include bp768 {
-                    margin-bottom: 60px;
-                };
             }
 
             &:last-child{
                 @include bp768 {
-                    margin-bottom: 60px;
+                    padding-bottom: 0;
                 };
             }
 
             .playPic{
                 opacity: 0;
-                transform: rotateY(240deg) translate3d(0,80px,0);
-                position: relative;
-                z-index: 2;
+                transform: rotateY( 240deg ) translate3d(0,80px,0);
             }
 
             p{
@@ -1247,8 +1237,6 @@ header{
 
         @include bp768 {
             padding: 60px 0 0;
-            position: relative;
-            z-index: 2;
         };
 
         .tabs{
@@ -1536,15 +1524,15 @@ footer{
 @keyframes worksPic {
     0%{
         opacity: 0;
-        transform: rotateY(240deg) translate3d(0,80px,2px);
+        transform: rotateY( 240deg ) translate3d(0,80px,0);
     }
     50%{
         opacity: 0;
-        transform: rotateY(80deg) translate3d(0,-10px,2px);
+        transform: rotateY( 80deg ) translate3d(0,-10px,0);
     }
     100%{
         opacity: 1;
-        transform: rotateY(0deg) translate3d(0,0,2px);
+        transform: rotateY( 0deg ) translate3d(0,0,0);
     }
 }
 

@@ -1,6 +1,6 @@
 <template>
   <article id="top">
-    <section class="heroArea">
+    <section class="heroArea" v-scroll="svgScroll">
 			<lottie :options="lottieOptions" v-on:lottieCreated="initLottie"/>
     </section>
     <section class="aboutArea" v-observe-visibility="{callback: visibilityChanged01, once: true,}" v-bind:class='{active:isVisible01}'>
@@ -59,6 +59,21 @@ export default {
 		},
 		playLottie () {
 			this.lottie.play();
+		},
+		svgScroll: function (evt, el) {
+			if (window.innerWidth < 768) {
+				if (window.scrollY > 600) {
+					el.setAttribute(
+					'style',
+					'display: none;'
+					)
+				} else{
+					el.setAttribute(
+					'style',
+					'display: flex;'
+					)
+				}
+			}
 		}
 	},
 	components: {

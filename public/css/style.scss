@@ -249,6 +249,7 @@ body {
         padding-bottom: 120px;
         position: relative;
         animation: zindexplus 0s ease-in .7s forwards;
+        z-index: -1;
 
         @include bp768 {
             margin-top: 366.5px;
@@ -1113,6 +1114,7 @@ header{
         transition: all .7s cubic-bezier(.14,.56,.44,.7) 0s;
         height: 329px;
         animation: zindex 0s ease-in .7s forwards;
+        z-index: 2;
 
         @include bp768 {
             height: 366.5px;

@@ -208,7 +208,8 @@ body {
     padding-bottom: 120px;
     position: relative;
     -webkit-animation: zindexplus 0s ease-in .7s forwards;
-    animation: zindexplus 0s ease-in .7s forwards; }
+    animation: zindexplus 0s ease-in .7s forwards;
+    z-index: -1; }
     @media (max-width: 768px) {
       body .bgWhite {
         margin-top: 366.5px;
@@ -972,7 +973,8 @@ header {
     transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     height: 329px;
     -webkit-animation: zindex 0s ease-in .7s forwards;
-    animation: zindex 0s ease-in .7s forwards; }
+    animation: zindex 0s ease-in .7s forwards;
+    z-index: 2; }
     @media (max-width: 768px) {
       .ttlArea.active {
         height: 366.5px; } }

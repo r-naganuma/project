@@ -42,7 +42,9 @@
       </div>
     </header>
 
-    <router-view/>
+    <transition mode="out-in">
+      <router-view/>
+    </transition>
 
     <footer>
       <div class="footer_icn">

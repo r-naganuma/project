@@ -205,7 +205,10 @@ body {
   body .bgWhite {
     background: #fff;
     margin-top: 329px;
-    padding-bottom: 120px; }
+    padding-bottom: 120px;
+    position: relative;
+    -webkit-animation: zindexplus 0s ease-in .7s forwards;
+    animation: zindexplus 0s ease-in .7s forwards; }
     @media (max-width: 768px) {
       body .bgWhite {
         margin-top: 366.5px;
@@ -967,7 +970,9 @@ header {
     -webkit-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     -o-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
-    height: 329px; }
+    height: 329px;
+    -webkit-animation: zindex 0s ease-in .7s forwards;
+    animation: zindex 0s ease-in .7s forwards; }
     @media (max-width: 768px) {
       .ttlArea.active {
         height: 366.5px; } }
@@ -1405,3 +1410,15 @@ footer {
     z-index: 2; }
   100% {
     z-index: -1; } }
+
+@-webkit-keyframes zindexplus {
+  0% {
+    z-index: -1; }
+  100% {
+    z-index: 2; } }
+
+@keyframes zindexplus {
+  0% {
+    z-index: -1; }
+  100% {
+    z-index: 2; } }

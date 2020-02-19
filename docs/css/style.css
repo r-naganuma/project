@@ -485,11 +485,6 @@ header {
       height: 90vh; } }
   #top .heroArea h1 {
     margin: auto;
-    font-family: museo-sans, sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    letter-spacing: 0.4em;
-    line-height: 1;
     position: fixed;
     z-index: -1;
     width: 300px; }
@@ -861,8 +856,8 @@ header {
             background: rgba(0, 0, 0, 0.4);
             z-index: 2; }
       .worksArea_box--list.active .playPic {
-        -webkit-animation: worksPic .5s ease-in 0s forwards;
-        animation: worksPic .5s ease-in 0s forwards; }
+        -webkit-animation: worksPic 0.5s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s forwards;
+        animation: worksPic 0.5s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s forwards; }
       .worksArea_box--list.active p {
         -webkit-animation: fade_in .3s ease-in .7s forwards;
         animation: fade_in .3s ease-in .7s forwards; }

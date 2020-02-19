@@ -1,5 +1,5 @@
 <template>
-<h1 id="bodymovin" ref="lavContainer"></h1>
+<h1 id="bodymovin" ref="lottieRef"></h1>
 </template>
 
 <script>
@@ -8,19 +8,17 @@ export default {
   props: {
     options: {
       type: Object,
-      required: true
     }
   },
   mounted () {
-    this.anim = lottie.loadAnimation({
-      container: this.$refs.lavContainer,
+    this.lottie = lottie.loadAnimation({
+      container: this.$refs.lottieRef,
       renderer: 'svg',
-      loop: false,
-      autoplay: this.options.autoplay !== false,
-      animationData: this.options.animationData.default,  // ここだけ変更何故かデフォルトを入れないと動かなかった… (要検証)
-      rendererSettings: this.options.rendererSettings
+      loop:  false,
+      autoplay: false,
+      animationData: this.options.lottieData.default,
     });
-    this.$emit('animCreated', this.anim)
+    this.$emit('lottieCreated', this.lottie)
   }
 }
 </script>

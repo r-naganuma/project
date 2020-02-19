@@ -1,7 +1,7 @@
 <template>
   <article id="top">
     <section class="heroArea">
-      <lottie :options="defaultOptions" v-on:animCreated="handleAnimation"/>
+			<lottie :options="lottieOptions" v-on:lottieCreated="initLottie"/>
     </section>
     <section class="aboutArea" v-observe-visibility="{callback: visibilityChanged01, once: true,}" v-bind:class='{active:isVisible01}'>
 			<div class="aboutArea_inner">
@@ -35,24 +35,31 @@
 import AboutBlock from '../components/AboutBlock.vue'
 import WorksBlock from '../components/WorksBlock.vue'
 import Lottie from '../components/Lottie.vue';
-import * as animationData from '../assets/data.json';
+import * as lottieData from '../assets/data.json';
 export default {
 	name: 'Home',
 	data(){
 		return {
 			isVisible01: false,
-			// text: 'Front-end engineer / Designer',
-			defaultOptions: {animationData: animationData},
-      animationSpeed: 1
+			lottie : [],
+			lottieOptions: {
+				lottieData: lottieData
+			}
 		}
 	},
 	methods: {
 		visibilityChanged01(isVisible01) {
 			this.isVisible01 = isVisible01
 		},
-		handleAnimation: function (anim) {
-      this.anim = anim;
-    }
+		initLottie (lottie) {
+			this.lottie = lottie;
+			setTimeout( () => {
+				this.playLottie();
+			}, 1000);
+		},
+		playLottie () {
+			this.lottie.play();
+		}
 	},
 	components: {
 		AboutBlock,

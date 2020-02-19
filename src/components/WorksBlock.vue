@@ -1,5 +1,14 @@
 <template>
   <div id="worksBox" class="worksArea_box">
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks09" :class='{active:isVisibleWorks09}'>
+      <a href="https://dogman-tokyo.com/" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works09.jpg"/>
+        </div>
+        <p>DogMan / ドッグマン</p>
+        <p>CODING</p>
+      </a>
+    </div>
     <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks08" :class='{active:isVisibleWorks08}'>
       <a href="http://traction.tokyo/leonard/" target="_blank">
         <div class="playPic">

@@ -6,11 +6,11 @@
     <div class="bgWhite">
       <section class="worksArea">
         <div class="tabs">
-          <p class="tabsFirst">WEB SITE</p>
-          <router-link to="/worksmovie/">WEDDING MOVIE</router-link>
+          <router-link class="tabsFirst" to="/works/">WEB SITE</router-link>
+          <p>WEDDING MOVIE</p>
         </div>
         <div class="tabcontent">
-          <WorksBlock></WorksBlock>
+          <WorksMovieBlock></WorksMovieBlock>
         </div>
       </section>
     </div>
@@ -18,9 +18,9 @@
 </template>
 
 <script>
-import WorksBlock from '../components/WorksBlock.vue'
+import WorksMovieBlock from '../components/WorksMovieBlock.vue'
 export default {
-  name: 'Works',
+  name: 'WorksMovie',
   data(){
     return {
       isVisibleTtl: false,
@@ -34,7 +34,7 @@ export default {
     }
   },
   components: {
-    WorksBlock
+    WorksMovieBlock
   },
   head: {
     title: function () {

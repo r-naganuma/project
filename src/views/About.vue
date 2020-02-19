@@ -16,15 +16,13 @@
 				<dl>
 					<dt>2014</dt>
 					<dd>
-						大手のWeb制作会社に就職。<br>
-						ディレクターからデザイン、コーディングまで全てに携わる。
+						大手のWeb制作会社に就職。<br class="pc_contents">ディレクターからデザイン、コーディングまで全てに携わる。
 					</dd>
 				</dl>
 				<dl>
 					<dt>2018</dt>
 					<dd>
-						ベンチャーのWeb制作会社に転職。<br>
-						フロントエンドエンジニアとしてコーディングに携わる。
+						ベンチャーのWeb制作会社に転職。<br class="pc_contents">フロントエンドエンジニアとしてコーディングに携わる。
 					</dd>
 				</dl>
 				<dl>
@@ -41,9 +39,9 @@
 		<section class="aboutArea">
 			<div class="aboutArea_inner">
 				<AboutBlock></AboutBlock>
-				<p class="aboutArea_note">
+				<!-- <p class="aboutArea_note">
 					結婚式ムービーのご依頼は、<router-link to="/contact/">お問い合わせ</router-link>か<a href="">ココナラ</a>からご連絡ください。
-				</p>
+				</p> -->
 			</div>
 		</section>
 	</div>

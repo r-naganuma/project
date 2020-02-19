@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import VueHead from 'vue-head'
 import VueAnalytics from 'vue-analytics'
+import VueYoutube from 'vue-youtube'
+
+Vue.use(VueYoutube)
 
 Vue.directive('scroll', {
   inserted: function (el, binding) {

@@ -23,7 +23,7 @@
       </router-link>
     </div>
     <div class="aboutArea_box--list">
-      <router-link to="/works/">
+      <router-link to="/worksmovie/">
         <div class="aboutIcn">
           <img src="../assets/icn_movie.png">
           <p>WEDDING MOVIE</p>

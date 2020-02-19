@@ -76,16 +76,30 @@ export default {
       this.isVisibleMenu = isVisibleMenu
     },
     handleScroll: function (evt, el) {
-      if (window.scrollY > 299) {
-        el.setAttribute(
-          'style',
-          'background-color: #2E3C7B; transition: all .3s;'
-        )
-      } else{
-        el.setAttribute(
-          'style',
-          'background-color: #fff; transition: all .3s;'
-        )
+      if (window.innerWidth > 768) {
+        if (window.scrollY > 299) {
+          el.setAttribute(
+            'style',
+            'background-color: #2E3C7B; transition: all .3s;'
+          )
+        } else{
+          el.setAttribute(
+            'style',
+            'background-color: #fff; transition: all .3s;'
+          )
+        }
+      } else {
+        if (window.scrollY > 330) {
+          el.setAttribute(
+            'style',
+            'background-color: #2E3C7B; transition: all .3s;'
+          )
+        } else{
+          el.setAttribute(
+            'style',
+            'background-color: #fff; transition: all .3s;'
+          )
+        }
       }
     }
   }

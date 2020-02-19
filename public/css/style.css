@@ -366,6 +366,10 @@ header {
         width: 100%;
         -webkit-animation: rotate2 .7s ease-in .1s forwards;
         animation: rotate2 .7s ease-in .1s forwards; }
+        @media (max-width: 768px) {
+          header.active .btn_menu .bar.bar3 {
+            -webkit-animation: rotate2sp .7s ease-in .1s forwards;
+            animation: rotate2sp .7s ease-in .1s forwards; } }
   header.active .headerInner {
     -webkit-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     -o-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
@@ -438,6 +442,30 @@ header {
     transform: rotate(-45deg) translate3d(5px, -5px, 0);
     background-color: #fff; } }
 
+@-webkit-keyframes rotate2sp {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0);
+    transform: rotate(0deg) translateY(0); }
+  50% {
+    -webkit-transform: rotate(0deg) translateY(-10px);
+    transform: rotate(0deg) translateY(-10px); }
+  100% {
+    -webkit-transform: rotate(-45deg) translate3d(4px, -4px, 0);
+    transform: rotate(-45deg) translate3d(4px, -4px, 0);
+    background-color: #fff; } }
+
+@keyframes rotate2sp {
+  0% {
+    -webkit-transform: rotate(0deg) translateY(0);
+    transform: rotate(0deg) translateY(0); }
+  50% {
+    -webkit-transform: rotate(0deg) translateY(-10px);
+    transform: rotate(0deg) translateY(-10px); }
+  100% {
+    -webkit-transform: rotate(-45deg) translate3d(4px, -4px, 0);
+    transform: rotate(-45deg) translate3d(4px, -4px, 0);
+    background-color: #fff; } }
+
 /*====================================================================
 *    TOP
 /*==================================================================*/
@@ -452,6 +480,9 @@ header {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
+  @media (max-width: 768px) {
+    #top .heroArea {
+      height: 90vh; } }
   #top .heroArea h1 {
     margin: auto;
     font-family: museo-sans, sans-serif;
@@ -1350,7 +1381,7 @@ footer {
     opacity: 0;
     -webkit-transform: rotateY(80deg) translateY(-10px);
     transform: rotateY(80deg) translateY(-10px); }
-  100% {
+  99.9%, to {
     opacity: 1;
     -webkit-transform: rotateY(0deg) translateY(0);
     transform: rotateY(0deg) translateY(0); } }
@@ -1364,7 +1395,7 @@ footer {
     opacity: 0;
     -webkit-transform: rotateY(80deg) translateY(-10px);
     transform: rotateY(80deg) translateY(-10px); }
-  100% {
+  99.9%, to {
     opacity: 1;
     -webkit-transform: rotateY(0deg) translateY(0);
     transform: rotateY(0deg) translateY(0); } }

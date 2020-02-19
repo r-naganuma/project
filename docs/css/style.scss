@@ -427,6 +427,10 @@ header{
                 &.bar3{
                     width: 100%;
                     animation: rotate2 .7s ease-in .1s forwards;
+
+                    @include bp768 {
+                        animation: rotate2sp .7s ease-in .1s forwards;
+                    };
                 }
             }
         }
@@ -481,6 +485,19 @@ header{
     }
 }
 
+@keyframes rotate2sp{
+    0%{
+        transform: rotate(0deg) translateY(0);
+    }
+    50%{
+        transform: rotate(0deg) translateY(-10px);
+    }
+    100%{
+        transform: rotate(-45deg) translate3d(4px,-4px,0);
+        background-color: #fff;
+    }
+}
+
 /*====================================================================
 *    TOP
 /*==================================================================*/
@@ -490,6 +507,10 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+
+        @include bp768 {
+            height: 90vh;
+        };
 
         h1{
             margin: auto;
@@ -1512,7 +1533,7 @@ footer{
         opacity: 0;
         transform: rotateY( 80deg ) translateY(-10px);
     }
-    100%{
+    99.9%, to{
         opacity: 1;
         transform: rotateY( 0deg ) translateY(0);
     }

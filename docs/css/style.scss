@@ -973,7 +973,7 @@ header{
             
             &.active{
                 .playPic{
-                    animation: worksPic .5s cubic-bezier(.14,.56,.44,.7) 0s forwards;
+                    animation: worksPic .5s ease-in 0s forwards;
                 }
 
                 p{
@@ -1533,7 +1533,7 @@ footer{
         opacity: 0;
         transform: rotateY( 80deg ) translateY(-10px);
     }
-    99.9%, to{
+    100%{
         opacity: 1;
         transform: rotateY( 0deg ) translateY(0);
     }

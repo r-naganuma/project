@@ -62,15 +62,15 @@ export default {
 		},
 		svgScroll: function (evt, el) {
 			if (window.innerWidth < 768) {
-				if (window.scrollY > 600) {
+				if (window.scrollY > 500) {
 					el.setAttribute(
 					'style',
-					'display: none;'
+					'opacity: 0;'
 					)
 				} else{
 					el.setAttribute(
 					'style',
-					'display: flex;'
+					'opacity: 1;'
 					)
 				}
 			}

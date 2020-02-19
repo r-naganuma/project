@@ -834,11 +834,15 @@ header{
         width: 100%;
         margin: 0 auto 100px;
         background: #fff;
+        position: relative;
+        z-index: 2;
     };
 
     &_box{
         display: flex;
         flex-wrap: wrap;
+        position: relative;
+        z-index: 2;
 
         @include bp768 {
             display: block;
@@ -867,6 +871,8 @@ header{
         &--list{
             width: 300px;
             margin: 0 100px 100px 0;
+            position: relative;
+            z-index: 2;
 
             @include bp768 {
                 width: 100%;
@@ -1241,6 +1247,8 @@ header{
 
         @include bp768 {
             padding: 60px 0 0;
+            position: relative;
+            z-index: 2;
         };
 
         .tabs{
@@ -1528,15 +1536,15 @@ footer{
 @keyframes worksPic {
     0%{
         opacity: 0;
-        transform: rotateY(240deg) translate3d(0,80px,0);
+        transform: rotateY(240deg) translate3d(0,80px,2px);
     }
     50%{
         opacity: 0;
-        transform: rotateY(80deg) translate3d(0,-10px,0);
+        transform: rotateY(80deg) translate3d(0,-10px,2px);
     }
     100%{
         opacity: 1;
-        transform: rotateY(0deg) translate3d(0,0,0);
+        transform: rotateY(0deg) translate3d(0,0,2px);
     }
 }
 

@@ -747,7 +747,10 @@ header {
   @media (max-width: 768px) {
     .worksArea {
       width: 100%;
-      margin: 0 auto 100px; } }
+      margin: 0 auto 100px;
+      background: #fff;
+      position: relative;
+      z-index: 2; } }
   .worksArea_box {
     display: -webkit-box;
     display: -ms-flexbox;

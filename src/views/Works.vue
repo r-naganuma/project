@@ -37,12 +37,12 @@ export default {
         if (window.scrollY > 366) {
           el.setAttribute(
             'style',
-            'opacity: 0;'
+            'display: none;'
           )
         } else{
           el.setAttribute(
             'style',
-            'opacity: 1;'
+            'display: flex;'
           )
         }
       }

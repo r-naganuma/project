@@ -214,6 +214,14 @@ body {
       body .bgWhite {
         margin-top: 366.5px;
         padding-bottom: 100px; } }
+  body .v-enter {
+    opacity: 0; }
+  body .v-enter-to {
+    opacity: 1; }
+  body .v-enter-active {
+    -webkit-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
+    -o-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
+    transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s; }
   body .v-leave {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);

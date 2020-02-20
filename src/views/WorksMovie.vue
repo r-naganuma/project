@@ -9,9 +9,7 @@
           <router-link class="tabsFirst" to="/works/">WEB SITE</router-link>
           <p>WEDDING MOVIE</p>
         </div>
-        <div class="tabcontent">
-          <WorksMovieBlock></WorksMovieBlock>
-        </div>
+        <WorksMovieBlock></WorksMovieBlock>
       </section>
     </div>
   </article>

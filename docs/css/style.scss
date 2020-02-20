@@ -296,14 +296,11 @@ header{
         outline: none;
         position: fixed;
         top: 30px;
-        left: 50%;
-        margin-left: 554px;
+        right: 50px;
         transition-delay: .7s;
 
         @include bp768 {
             top: 20px;
-            left: inherit;
-            margin-left: 0;
             right: 20px;
         };
 

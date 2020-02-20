@@ -253,16 +253,13 @@ header {
     outline: none;
     position: fixed;
     top: 30px;
-    left: 50%;
-    margin-left: 554px;
+    right: 50px;
     -webkit-transition-delay: .7s;
     -o-transition-delay: .7s;
     transition-delay: .7s; }
     @media (max-width: 768px) {
       header .btn_menu {
         top: 20px;
-        left: inherit;
-        margin-left: 0;
         right: 20px; } }
     header .btn_menu .bar {
       display: block;

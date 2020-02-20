@@ -539,7 +539,7 @@ header {
   background: #fff; }
   @media (max-width: 768px) {
     #top .aboutArea {
-      margin-top: 50px;
+      margin-top: 60px;
       padding: 33px 0 95px; } }
   #top .aboutArea_lead {
     position: absolute;

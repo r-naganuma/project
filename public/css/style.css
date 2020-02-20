@@ -539,8 +539,8 @@ header {
   background: #fff; }
   @media (max-width: 768px) {
     #top .aboutArea {
-      margin-top: 10px;
-      padding: 60px 0 95px; } }
+      margin-top: 50px;
+      padding: 33px 0 95px; } }
   #top .aboutArea_lead {
     position: absolute;
     z-index: 3;

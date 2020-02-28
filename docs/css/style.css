@@ -984,15 +984,12 @@ header {
   justify-content: center;
   margin-bottom: 80px;
   position: fixed;
-  top: 0;
-  z-index: 2; }
+  top: 0; }
   .ttlArea.active {
     -webkit-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     -o-transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
     transition: all 0.7s cubic-bezier(0.14, 0.56, 0.44, 0.7) 0s;
-    height: 329px;
-    -webkit-animation: zindex 0s ease-in .7s forwards;
-    animation: zindex 0s ease-in .7s forwards; }
+    height: 329px; }
     @media (max-width: 768px) {
       .ttlArea.active {
         height: 366.5px; } }

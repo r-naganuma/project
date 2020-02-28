@@ -1127,12 +1127,10 @@ header{
     margin-bottom: 80px;
     position: fixed;
     top: 0;
-    z-index: 2;
 
     &.active{
         transition: all .7s cubic-bezier(.14,.56,.44,.7) 0s;
         height: 329px;
-        animation: zindex 0s ease-in .7s forwards;
 
         @include bp768 {
             height: 366.5px;

@@ -30,21 +30,21 @@ export default {
     visibilityChangedTtl(isVisibleTtl) {
       this.isVisibleTtl = isVisibleTtl
     },
-    ttlScroll: function (evt, el) {
-      if (window.innerWidth < 768) {
-        if (window.scrollY > 366) {
-          el.setAttribute(
-            'style',
-            'display: none;'
-          )
-        } else{
-          el.setAttribute(
-            'style',
-            'display: flex;'
-          )
-        }
-      }
-    }
+    // ttlScroll: function (evt, el) {
+    //   if (window.innerWidth < 768) {
+    //     if (window.scrollY > 366) {
+    //       el.setAttribute(
+    //         'style',
+    //         'display: none;'
+    //       )
+    //     } else{
+    //       el.setAttribute(
+    //         'style',
+    //         'display: flex;'
+    //       )
+    //     }
+    //   }
+    // }
   },
   components: {
     WorksBlock

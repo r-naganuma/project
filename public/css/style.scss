@@ -248,13 +248,15 @@ body {
         margin-top: 329px;
         padding-bottom: 120px;
         position: relative;
-        animation: zindexplus .2s ease-in .7s forwards;
-        z-index: 2;
-        opacity: 0;
+        animation: zindexplus 0s ease-in .7s forwards;
+        z-index: -1;
 
         @include bp768 {
             margin-top: 366.5px;
             padding-bottom: 100px;
+            opacity: 0;
+            animation: fade_in .2s ease-in .7s forwards;
+            z-index: 1;
         };
     }
 
@@ -1556,20 +1558,11 @@ footer{
     }
 }
 
-@keyframes zindex {
-    0%{
-        z-index: 2;
-    }
-    100%{
-        z-index: -1;
-    }
-}
-
 @keyframes zindexplus {
     0%{
-        opacity: 0;
+        z-index: -1;
     }
     100%{
-        opacity: 1;
+        z-index: 2;
     }
 }

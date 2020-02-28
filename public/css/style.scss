@@ -248,8 +248,9 @@ body {
         margin-top: 329px;
         padding-bottom: 120px;
         position: relative;
-        animation: zindexplus 0s ease-in .7s forwards;
-        z-index: -1;
+        animation: zindexplus .2s ease-in .7s forwards;
+        z-index: 2;
+        opacity: 0;
 
         @include bp768 {
             margin-top: 366.5px;
@@ -1566,9 +1567,9 @@ footer{
 
 @keyframes zindexplus {
     0%{
-        z-index: -1;
+        opacity: 0;
     }
     100%{
-        z-index: 2;
+        opacity: 1;
     }
 }

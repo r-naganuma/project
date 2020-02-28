@@ -207,9 +207,10 @@ body {
     margin-top: 329px;
     padding-bottom: 120px;
     position: relative;
-    -webkit-animation: zindexplus 0s ease-in .7s forwards;
-    animation: zindexplus 0s ease-in .7s forwards;
-    z-index: -1; }
+    -webkit-animation: zindexplus .2s ease-in .7s forwards;
+    animation: zindexplus .2s ease-in .7s forwards;
+    z-index: 2;
+    opacity: 0; }
     @media (max-width: 768px) {
       body .bgWhite {
         margin-top: 366.5px;
@@ -1430,12 +1431,12 @@ footer {
 
 @-webkit-keyframes zindexplus {
   0% {
-    z-index: -1; }
+    opacity: 0; }
   100% {
-    z-index: 2; } }
+    opacity: 1; } }
 
 @keyframes zindexplus {
   0% {
-    z-index: -1; }
+    opacity: 0; }
   100% {
-    z-index: 2; } }
+    opacity: 1; } }

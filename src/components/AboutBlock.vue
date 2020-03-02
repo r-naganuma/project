@@ -1,6 +1,6 @@
 <template>
   <div class="aboutArea_box">
-    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout01" :class='{active:isVisibleAbout01}'>
       <router-link to="/works/">
         <div class="aboutIcn">
           <img src="../assets/icn_design.png">
@@ -11,7 +11,7 @@
         </p>
       </router-link>
     </div>
-    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout02" :class='{active:isVisibleAbout02}'>
       <router-link to="/works/">
         <div class="aboutIcn">
           <img src="../assets/icn_coding.png">
@@ -22,7 +22,7 @@
         </p>
       </router-link>
     </div>
-    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout03" :class='{active:isVisibleAbout03}'>
       <router-link to="/worksmovie/">
         <div class="aboutIcn">
           <img src="../assets/icn_movie.png">
@@ -55,12 +55,20 @@ export default {
   },
   data: function() {
     return {
-      isVisibleAbout: false
+      isVisibleAbout01: false,
+      isVisibleAbout02: false,
+      isVisibleAbout03: false
     }
   },
   methods: {
-    visibilityChangedAbout(isVisibleAbout) {
-      this.isVisibleAbout = isVisibleAbout
+    visibilityChangedAbout01(isVisibleAbout01) {
+      this.isVisibleAbout01 = isVisibleAbout01
+    },
+    visibilityChangedAbout02(isVisibleAbout02) {
+      this.isVisibleAbout02 = isVisibleAbout02
+    },
+    visibilityChangedAbout03(isVisibleAbout03) {
+      this.isVisibleAbout03 = isVisibleAbout03
     }
   }
 }

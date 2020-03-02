@@ -749,10 +749,20 @@ header {
       -webkit-transition-delay: .5s;
       -o-transition-delay: .5s;
       transition-delay: .5s; }
+      @media (max-width: 768px) {
+        .aboutArea_box--list.active:nth-child(2)::after {
+          -webkit-transition-delay: .3s;
+          -o-transition-delay: .3s;
+          transition-delay: .3s; } }
     .aboutArea_box--list.active:nth-child(3)::after {
       -webkit-transition-delay: .7s;
       -o-transition-delay: .7s;
       transition-delay: .7s; }
+      @media (max-width: 768px) {
+        .aboutArea_box--list.active:nth-child(3)::after {
+          -webkit-transition-delay: .3s;
+          -o-transition-delay: .3s;
+          transition-delay: .3s; } }
     @media (max-width: 768px) {
       .aboutArea_box--list:last-child {
         margin-bottom: 0; } }

@@ -3,12 +3,9 @@
     <section class="heroArea" v-scroll="svgScroll">
 			<lottie :options="lottieOptions" v-on:lottieCreated="initLottie"/>
     </section>
-    <section class="aboutArea" v-observe-visibility="{callback: visibilityChanged01, once: true,}" v-bind:class='{active:isVisible01}'>
+    <section class="aboutArea">
 			<div class="aboutArea_inner">
 				<h2>ABOUT ME</h2>
-				<!-- <p class="aboutArea_lead">
-					<span v-for="(t, index) in text" :key="index" class="item" :style="{animationDelay: index*40+'ms'}" v-text="t" />
-				</p> -->
 				<AboutBlock></AboutBlock>
 				<div class="btn_readMore">
 					<router-link to="/about/">
@@ -40,7 +37,6 @@ export default {
 	name: 'Home',
 	data(){
 		return {
-			isVisible01: false,
 			lottie : [],
 			lottieOptions: {
 				lottieData: lottieData
@@ -48,9 +44,6 @@ export default {
 		}
 	},
 	methods: {
-		visibilityChanged01(isVisible01) {
-			this.isVisible01 = isVisible01
-		},
 		initLottie (lottie) {
 			this.lottie = lottie;
 			setTimeout( () => {

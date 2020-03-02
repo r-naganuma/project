@@ -1,6 +1,6 @@
 <template>
   <div class="aboutArea_box">
-    <div class="aboutArea_box--list">
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
       <router-link to="/works/">
         <div class="aboutIcn">
           <img src="../assets/icn_design.png">
@@ -11,7 +11,7 @@
         </p>
       </router-link>
     </div>
-    <div class="aboutArea_box--list">
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
       <router-link to="/works/">
         <div class="aboutIcn">
           <img src="../assets/icn_coding.png">
@@ -22,7 +22,7 @@
         </p>
       </router-link>
     </div>
-    <div class="aboutArea_box--list">
+    <div class="aboutArea_box--list" v-observe-visibility="visibilityChangedAbout" :class='{active:isVisibleAbout}'>
       <router-link to="/worksmovie/">
         <div class="aboutIcn">
           <img src="../assets/icn_movie.png">
@@ -52,6 +52,16 @@ export default {
       $(this).addClass('noActive');
       $(this).children('.aboutTxt').fadeOut(150);
     });
+  },
+  data: function() {
+    return {
+      isVisibleAbout: false
+    }
+  },
+  methods: {
+    visibilityChangedAbout(isVisibleAbout) {
+      this.isVisibleAbout = isVisibleAbout
+    }
   }
 }
 </script>

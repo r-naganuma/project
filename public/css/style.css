@@ -1028,7 +1028,7 @@ header {
 #about .yearArea {
   width: 900px;
   margin: 0 auto;
-  padding: 80px 0 120px;
+  padding: 80px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1042,7 +1042,7 @@ header {
   @media (max-width: 768px) {
     #about .yearArea {
       width: 89.33%;
-      padding: 60px 0 100px;
+      padding: 60px 0 80px;
       display: block; } }
   #about .yearArea_txt {
     width: 590px; }
@@ -1084,13 +1084,13 @@ header {
       #about .yearArea_txt dl:last-child {
         margin-bottom: 0; }
   #about .yearArea_pic {
-    width: 230px; }
+    width: 310px; }
     @media (max-width: 1140px) {
       #about .yearArea_pic {
-        width: 25.55%; } }
+        width: 38.89%; } }
     @media (max-width: 768px) {
       #about .yearArea_pic {
-        width: 59.7%;
+        width: 70%;
         margin: 60px auto 0; } }
 
 #about .aboutArea_note {
@@ -1241,6 +1241,30 @@ header {
     #contact .contactArea button:hover {
       background-color: #fff;
       color: #2E3C7B; }
+
+/*====================================================================
+*    404
+/*==================================================================*/
+#a404 {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  #a404 p {
+    text-align: center;
+    font-size: 30px;
+    font-family: museo-sans, sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px; }
+  #a404 img {
+    width: 310px;
+    margin: 0 auto; }
 
 /*====================================================================
 *    FOOTER

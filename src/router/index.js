@@ -50,7 +50,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "movie" */ '../views/Movie.vue')
   },
   {
-    path: '*',
+    path: '/*',
     name: 'notFound',
     // route level code-splitting
     // this generates a separate chunk (notFound.[hash].js) for this route

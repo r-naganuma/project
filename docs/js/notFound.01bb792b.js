@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["notFound"],{"8cdb":function(t,n,e){"use strict";e.r(n);var a=function(){var t=this,n=t.$createElement;t._self._c;return t._m(0)},c=[function(){var t=this,n=t.$createElement,a=t._self._c||n;return a("article",{attrs:{id:"a404"}},[a("section",[a("p",[t._v("404")]),a("img",{attrs:{src:e("952a")}})])])}],r=e("2877"),i={},s=Object(r["a"])(i,a,c,!1,null,null,null);n["default"]=s.exports},"952a":function(t,n,e){t.exports=e.p+"img/pic_naganuma.1ffd6da1.jpg"}}]);
+//# sourceMappingURL=notFound.01bb792b.js.map

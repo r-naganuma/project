@@ -54,17 +54,7 @@ export default {
       return {
         inner: this.title
       }
-    },
-    meta: [
-      { name: 'description', content: 'フロントエンドエンジニア、デザイナーとして活動している永沼遼のポートフォリオサイトです。趣味で動画編集もしております。' },
-      { name: 'keywords', content: 'WORKS, RYO, engineer, Designer, movie, wedding, portfolio, 永沼, 遼, エンジニア, デザイナー, 動画, 結婚式, ムービー, プロフィールムービー, オープニングムービー, ポートフォリオ' },
-      { property: 'og:title', content: 'WORKS' },
-      { property: 'og:description', content: 'フロントエンドエンジニア、デザイナーとして活動している永沼遼のポートフォリオサイトです。趣味で動画編集もしております。' },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:url', content: 'https://ryo-naganuma.com/works/' },
-      { property: 'og:image', content: 'https://ryo-naganuma.com/assets/ogp.png' },
-      { name: 'twitter:card', content: 'summary' }
-    ]
+    }
   }
 }
 </script>

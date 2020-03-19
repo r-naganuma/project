@@ -355,10 +355,38 @@ header {
           font-size: 22px;
           letter-spacing: 0.15em;
           color: #fff;
-          line-height: 1; }
+          line-height: 1;
+          position: relative;
+          overflow: hidden; }
           @media (max-width: 768px) {
             header .headerInner ul li a {
               font-size: 16px; } }
+          header .headerInner ul li a p {
+            transition: transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95), -webkit-transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95);
+            -webkit-transform: translateY(0%);
+            -ms-transform: translateY(0%);
+            transform: translateY(0%); }
+            header .headerInner ul li a p + p {
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              margin: auto;
+              -webkit-transform: translateY(150%);
+              -ms-transform: translateY(150%);
+              transform: translateY(150%); }
+          header .headerInner ul li a:hover {
+            opacity: 1; }
+            header .headerInner ul li a:hover p {
+              transition: transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95), -webkit-transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95);
+              -webkit-transform: translateY(-150%);
+              -ms-transform: translateY(-150%);
+              transform: translateY(-150%); }
+              header .headerInner ul li a:hover p + p {
+                transition: transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95), -webkit-transform 1.05s cubic-bezier(0.3, 0.86, 0.36, 0.95);
+                -webkit-transform: translateY(0%);
+                -ms-transform: translateY(0%);
+                transform: translateY(0%); }
     header .headerInner_icn {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1084,14 +1112,23 @@ header {
       #about .yearArea_txt dl:last-child {
         margin-bottom: 0; }
   #about .yearArea_pic {
-    width: 310px; }
+    width: 230px;
+    opacity: 0;
+    -webkit-transition: all 1.2s linear .6s;
+    -o-transition: all 1.2s linear .6s;
+    transition: all 1.2s linear .6s; }
     @media (max-width: 1140px) {
       #about .yearArea_pic {
-        width: 38.89%; } }
+        width: 25.56%; } }
     @media (max-width: 768px) {
       #about .yearArea_pic {
-        width: 70%;
-        margin: 60px auto 0; } }
+        width: 59.7%;
+        margin: 60px auto 0;
+        -webkit-transition: all 1.2s linear 0s;
+        -o-transition: all 1.2s linear 0s;
+        transition: all 1.2s linear 0s; } }
+    #about .yearArea_pic.active {
+      opacity: 1; }
 
 #about .aboutArea_note {
   margin-top: 80px; }

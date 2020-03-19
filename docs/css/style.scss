@@ -416,10 +416,40 @@ header{
                     letter-spacing: 0.15em;
                     color: #fff;
                     line-height: 1;
+                    position: relative;
+                    overflow: hidden;
 
                     @include bp768 {
                         font-size: 16px;
                     };
+
+                    p{
+                        transition: transform 1.05s cubic-bezier(.3,.86,.36,.95),-webkit-transform 1.05s cubic-bezier(.3,.86,.36,.95);
+                        transform: translateY(0%);
+
+                        + p{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                            transform: translateY(150%);
+                        }
+                    }
+
+                    &:hover{
+                        opacity: 1;
+
+                        p{
+                            transition: transform 1.05s cubic-bezier(.3,.86,.36,.95),-webkit-transform 1.05s cubic-bezier(.3,.86,.36,.95);
+                            transform: translateY(-150%);
+
+                            + p{
+                                transition: transform 1.05s cubic-bezier(.3,.86,.36,.95),-webkit-transform 1.05s cubic-bezier(.3,.86,.36,.95);
+                                transform: translateY(0%);
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -1254,16 +1284,23 @@ header{
         }
 
         &_pic{
-            width: 310px;
+            width: 230px;
+            opacity: 0;
+            transition: all 1.2s linear .6s;
 
             @include bp1140 {
-                width: 38.89%;
+                width: 25.56%;
             };
 
             @include bp768 {
-                width: 70%;
+                width: 59.7%;
                 margin: 60px auto 0;
+                transition: all 1.2s linear 0s;
             };
+
+            &.active{
+                opacity: 1;
+            }
         }
     }
 

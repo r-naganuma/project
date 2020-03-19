@@ -32,8 +32,8 @@
 					</dd>
 				</dl>
 			</div>
-			<div class="yearArea_pic">
-				<img src="@/assets/pic_naganuma.jpg">
+			<div class="yearArea_pic" v-observe-visibility="visibilityChangedNaganuma" :class='{active:isVisibleNaganuma}'>
+				<img src="@/assets/naganuma_1-1.jpg">
 			</div>
 		</section>
 		<section class="aboutArea">
@@ -55,12 +55,16 @@ export default {
 	data(){
 		return {
 			isVisibleTtl: false,
+			isVisibleNaganuma: false,
 			title: 'ABOUT ME'
 		}
 	},
 	methods: {
 		visibilityChangedTtl(isVisibleTtl) {
 			this.isVisibleTtl = isVisibleTtl
+		},
+		visibilityChangedNaganuma(isVisibleNaganuma) {
+			this.isVisibleNaganuma = isVisibleNaganuma
 		}
 	},
 	components: {

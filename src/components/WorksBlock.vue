@@ -1,5 +1,14 @@
 <template>
   <div id="worksBox" class="worksArea_box">
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks10" :class='{active:isVisibleWorks10}'>
+      <a href="https://maggymoon.jp/" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works10.jpg"/>
+        </div>
+        <p>MAGGY (マギー) オフィシャルサイト</p>
+        <p>CODING</p>
+      </a>
+    </div>
     <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks09" :class='{active:isVisibleWorks09}'>
       <a href="https://dogman-tokyo.com/" target="_blank">
         <div class="playPic">
@@ -42,6 +51,42 @@
           <img src="@/assets/works05.jpg"/>
         </div>
         <p>Cosmo Communications INC.</p>
+        <p>CODING</p>
+      </a>
+    </div>
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks14" :class='{active:isVisibleWorks14}'>
+      <a href="https://www.rosebud-web.com/creolme_2019aw_lookbook_vol2.html" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works14.jpg"/>
+        </div>
+        <p>CREOLME Autumn 2019 Vol.2</p>
+        <p>CODING</p>
+      </a>
+    </div>
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks13" :class='{active:isVisibleWorks13}'>
+      <a href="https://www.rosebud-web.com/creolme_2019aw_lookbook_vol1.html" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works13.jpg"/>
+        </div>
+        <p>CREOLME Autumn 2019 Vol.1</p>
+        <p>CODING</p>
+      </a>
+    </div>
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks12" :class='{active:isVisibleWorks12}'>
+      <a href="https://www.rosebud-web.com/creolme_2019ss_lookbook_vol2.html" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works12.jpg"/>
+        </div>
+        <p>CREOLME 2019 SUMMER COLLECTION</p>
+        <p>CODING</p>
+      </a>
+    </div>
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks11" :class='{active:isVisibleWorks11}'>
+      <a href="https://www.rosebud-web.com/creolme_2019ss_lookbook_vol1.html" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works11.jpg"/>
+        </div>
+        <p>CREOLME 2019 SPRING VOL.1</p>
         <p>CODING</p>
       </a>
     </div>
@@ -98,56 +143,10 @@
         isVisibleWorks08: false,
         isVisibleWorks09: false,
         isVisibleWorks10: false,
-        // items: [
-        //   { 
-        //     url: 'http://traction.tokyo/leonard/',
-        //     imagePath: require('@/assets/works08.jpg'),
-        //     name: '「Leonard」Hotel’s Diner',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'http://shoheitakenaka.com/',
-        //     imagePath: require('@/assets/works07.jpg'),
-        //     name: 'SHOHEI TAKENAKA',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'https://jamaisvu.co.jp/',
-        //     imagePath: require('@/assets/works06.jpg'),
-        //     name: 'JAMAIS VU（ジャメヴ）公式サイト｜Official Online Store',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'https://www.cosmo-com.jp/',
-        //     imagePath: require('@/assets/works05.jpg'),
-        //     name: 'Cosmo Communications INC.',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'http://triumph-cpn.com/triumph/corelabel/angel25anniversary/',
-        //     imagePath: require('@/assets/works04.jpg'),
-        //     name: '天使のブラ25周年特設サイト｜Triumph',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'https://www.jph-japon.co.jp/',
-        //     imagePath: require('@/assets/works03.jpg'),
-        //     name: 'JEAN-PAUL HÉVIN JAPON',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'http://traction.tokyo/',
-        //     imagePath: require('@/assets/works02.jpg'),
-        //     name: 'TRACTION Inc.',
-        //     category: 'CODING'
-        //   },
-        //   { 
-        //     url: 'http://www.qualiam.com/',
-        //     imagePath: require('@/assets/works01.jpg'),
-        //     name: 'Qualiam.,Inc',
-        //     category: 'CODING'
-        //   }
-        // ],
+        isVisibleWorks11: false,
+        isVisibleWorks12: false,
+        isVisibleWorks13: false,
+        isVisibleWorks14: false
       }
     },
     methods: {
@@ -180,6 +179,18 @@
       },
       visibilityChangedWorks10(isVisibleWorks10) {
         this.isVisibleWorks10 = isVisibleWorks10
+      },
+      visibilityChangedWorks11(isVisibleWorks11) {
+        this.isVisibleWorks11 = isVisibleWorks11
+      },
+      visibilityChangedWorks12(isVisibleWorks12) {
+        this.isVisibleWorks12 = isVisibleWorks12
+      },
+      visibilityChangedWorks13(isVisibleWorks13) {
+        this.isVisibleWorks13 = isVisibleWorks13
+      },
+      visibilityChangedWorks14(isVisibleWorks14) {
+        this.isVisibleWorks14 = isVisibleWorks14
       }
     }
   }

@@ -13,17 +13,20 @@
         <ul>
           <li v-on:click='isActive01=!isActive01'>
             <router-link to="/about/">
-              ABOUT ME
+              <p>ABOUT ME</p>
+              <p>ABOUT ME</p>
             </router-link>
           </li>
           <li v-on:click='isActive01=!isActive01'>
             <router-link to="/works/">
-              WORKS
+              <p>WORKS</p>
+              <p>WORKS</p>
             </router-link>
           </li>
           <li v-on:click='isActive01=!isActive01'>
             <router-link to="/contact/">
-              CONTACT
+              <p>CONTACT</p>
+              <p>CONTACT</p>
             </router-link>
           </li>
         </ul>

@@ -1,5 +1,14 @@
 <template>
   <div id="worksBox" class="worksArea_box">
+    <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks15" :class='{active:isVisibleWorks15}'>
+      <a href="https://lbi.jp/" target="_blank">
+        <div class="playPic">
+          <img src="@/assets/works15.jpg"/>
+        </div>
+        <p>株式会社 LBI</p>
+        <p>CODING</p>
+      </a>
+    </div>
     <div class="worksArea_box--list" v-observe-visibility="visibilityChangedWorks10" :class='{active:isVisibleWorks10}'>
       <a href="https://maggymoon.jp/" target="_blank">
         <div class="playPic">
@@ -146,7 +155,8 @@
         isVisibleWorks11: false,
         isVisibleWorks12: false,
         isVisibleWorks13: false,
-        isVisibleWorks14: false
+        isVisibleWorks14: false,
+        isVisibleWorks15: false
       }
     },
     methods: {
@@ -191,6 +201,9 @@
       },
       visibilityChangedWorks14(isVisibleWorks14) {
         this.isVisibleWorks14 = isVisibleWorks14
+      },
+      visibilityChangedWorks15(isVisibleWorks15) {
+        this.isVisibleWorks15 = isVisibleWorks15
       }
     }
   }
